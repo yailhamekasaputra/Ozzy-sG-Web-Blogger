@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
@@ -145,6 +144,7 @@ function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
         <h1 className="text-gray-800 font-semibold  items-center text-light dark:text-dark">
+          {/* &copy; {new Date().getFullYear()} Ozzy'sG Blog. All rights reserved */}
           &copy; {new Date().getFullYear()} Ozzy'sG Blog. All rights reserved
         </h1>
       </div>

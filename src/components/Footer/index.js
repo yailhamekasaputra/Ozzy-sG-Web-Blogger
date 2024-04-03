@@ -38,12 +38,9 @@ function Footer() {
               </div>
             </section>
           </div>
-          {/* batas */}
         </div>
-        {/* Sisipkan kode untuk bagian Product, Company, dan Support di sini */}
       </div>
       <div className="container w-full mx-auto px-10 flex flex-wrap gap-9">
-        {/* Deskripsi Singkat */}
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
           <h3 className="text-xl font-bold mb-4">Welcome to my blog!</h3>
           <p className="text-sm">
@@ -53,7 +50,6 @@ function Footer() {
           </p>
         </div>
 
-        {/* Menu Category */}
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
           <h3 className="text-xl font-bold mb-4">Categorie</h3>
           <ul className="flex flex-wrap">
@@ -97,8 +93,6 @@ function Footer() {
                 Music
               </a>
             </li>
-
-            {/* Tambahkan kategori lainnya di sini */}
           </ul>
         </div>
         <div className="px-4 mb-8">
@@ -120,7 +114,6 @@ function Footer() {
                 Contact
               </a>
             </li>
-            {/* Tambahkan kategori lainnya di sini */}
           </ul>
         </div>
         <div className="px-4 mb-8">
@@ -146,7 +139,6 @@ function Footer() {
                 FAQ
               </a>
             </li>
-            {/* Tambahkan kategori lainnya di sini */}
           </ul>
         </div>
       </div>

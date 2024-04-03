@@ -43,11 +43,11 @@ function Footer() {
       <div className="container w-full mx-auto px-10 flex flex-wrap gap-9">
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
           <h3 className="text-xl font-bold mb-4">Welcome to my blog!</h3>
-          <h1 className="text-sm">
+          <p className="text-sm">
             Here, you will discover insightful perspectives on fascinating
             topics such as movies, technology, music, art, and more. Let's enjoy
             this colorful journey together!
-          </h1>
+          </p>
         </div>
 
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
@@ -144,7 +144,7 @@ function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
         <h1 className="text-gray-800 font-semibold  items-center text-light dark:text-dark">
-          Ozzy'sG Blog. All rights reserved
+          &copy; {new Date().getFullYear()} Ozzy'sG Blog. All rights reserved
         </h1>
       </div>
     </footer>

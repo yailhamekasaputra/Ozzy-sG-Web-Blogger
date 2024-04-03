@@ -144,7 +144,7 @@ function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
         <h1 className="text-gray-800 font-semibold  items-center text-light dark:text-dark">
-          &copy; {new Date().getFullYear()} Ozzy'sG Blog. All rights reserved
+          Ozzy'sG Blog. All rights reserved
         </h1>
       </div>
     </footer>

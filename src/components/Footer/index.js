@@ -43,11 +43,11 @@ function Footer() {
       <div className="container w-full mx-auto px-10 flex flex-wrap gap-9">
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
           <h3 className="text-xl font-bold mb-4">Welcome to my blog!</h3>
-          <p className="text-sm">
+          <h1 className="text-sm">
             Here, you will discover insightful perspectives on fascinating
             topics such as movies, technology, music, art, and more. Let's enjoy
             this colorful journey together!
-          </p>
+          </h1>
         </div>
 
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">

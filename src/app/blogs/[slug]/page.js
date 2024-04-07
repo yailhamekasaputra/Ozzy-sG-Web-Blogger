@@ -98,11 +98,11 @@ export default function BlogPage({ params }) {
       <article>
         <div className="mb-8 text-center relative w-full h-[70vh] bg-dark">
           <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <Tag
+            {/* <Tag
               name={blog.tags[0]}
               link={`/categories/${slug(blog.tags[0])}`}
               className="px-6 text-sm py-2"
-            />
+            /> */}
             <h1 className="inline-block mt-6 font-semibold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
               {blog.title}
             </h1>

@@ -49,19 +49,19 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
         <FiClock className="mr-1" /> {/* Clock icon */}
         <span className="text-sm">{blog.readingTime.text}</span>
       </div>
-      {/* <span className="text-sm">
+      <span className="text-sm">
         <Link href={`/categories/${slug(blog.tags[0])}`} passHref>
-          <p
+          {/* <p
             className="'inline-block py-1.5  md:py-2 px-6  md:px-10  bg-dark dark:bg-white text-light dark:text-dark rounded-full border-2 border-solid  hover:scale-105 transition-all ease duration-200 m-2',
         props.className,
         active
         ? 'bg-dark  dark:bg-light dark:text-dark'
         : 'bg-light text-dark  dark:text-light'"
-          >
-            #{blog.tags[0]}
-          </p>
+          > */}
+          #{blog.tags[0]}
+          {/* </p> */}
         </Link>
-      </span> */}
+      </span>
     </div>
   );
 };

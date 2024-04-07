@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -8,8 +9,8 @@ import { FaTwitter } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="mt-16 rounded-2xl bg-dark dark:bg-light m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-      <h3 className="mt-16  font-bold  text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
+    <footer className="mt-10 rounded-2xl bg-dark dark:bg-light m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
+      <h3 className="mt-12  font-bold  text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
         Hello World!
       </h3>
       <div className="bg-gray-50 h-auto md:h-1/2 w-full flex md:flex-row flex-col justify-center items-center p-8 md:p-20">
@@ -31,111 +32,129 @@ function Footer() {
                 </h3>
               </div>
               <div class="flex gap-3 pt-2 pl-3 ">
-                <FaGithub className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
-                <FaInstagram className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
-                <FaLinkedin className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
-                <FaTwitter className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
+                <Link
+                  href={
+                    'https://yailhamekasaputra.github.io/yailhameka-portfolio2/'
+                  }
+                  passHref
+                >
+                  <FaGithub className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
+                </Link>
+                <Link href={'https://www.instagram.com/yailhameka/'} passHref>
+                  <FaInstagram className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
+                </Link>
+                <Link
+                  href={
+                    'https://id.linkedin.com/in/ya-ilham-eka-saputra-604287174'
+                  }
+                  passHref
+                >
+                  <FaLinkedin className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
+                </Link>
+                <Link href={'https://ozzysg-movie-search.vercel.app/'} passHref>
+                  <FaTwitter className="w-4 h-4 hover:scale-125 duration-200 hover:cursor-pointer fill-current text-dark dark:text-light stroke-2" />
+                </Link>
               </div>
             </section>
           </div>
         </div>
       </div>
-      <div className="container w-full mx-auto px-10 flex flex-wrap gap-9">
-        <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+      <div className="container w-full mx-auto px-10 flex flex-wrap gap-4">
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-1">
           <h3 className="text-xl font-bold mb-4">Welcome to my blog!</h3>
-          <p className="text-sm">
+          <p className="text-xs text-justify justify-between">
             Here, you will discover insightful perspectives on fascinating
             topics such as movies, technology, music, art, and more. Let's enjoy
             this colorful journey together!
           </p>
         </div>
 
-        <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
-          <h3 className="text-xl font-bold mb-4">Categorie</h3>
+        <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-1">
+          <h3 className="text-sm font-bold mb-4">Categorie</h3>
           <ul className="flex flex-wrap">
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Movie
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Web Development
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Tech
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 JavaScript
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Music
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Culture
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 JavaScript
               </a>
             </li>
-            <li className="w-1/2 mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="w-1/2 mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Music
               </a>
             </li>
           </ul>
         </div>
-        <div className="px-4 mb-8">
-          <h3 className="text-xl font-bold mb-4">Menu</h3>
+        <div className="px-4 mb-4">
+          <h3 className="text-sm font-bold mb-4">Menu</h3>
           <ul>
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Home
               </a>
             </li>
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Categories
               </a>
             </li>
 
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Contact
               </a>
             </li>
           </ul>
         </div>
         <div className="px-4 mb-8">
-          <h3 className="text-xl font-bold mb-4">Terms Of Use</h3>
+          <h3 className="text-sm font-bold mb-4">Terms Of Use</h3>
           <ul>
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Privacy-Policy
               </a>
             </li>
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 About
               </a>
             </li>
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 Blog
               </a>
             </li>
-            <li className="mb-2">
-              <a href="#" className="text-sm hover:text-gray-400">
+            <li className="mb-1">
+              <a href="#" className="text-xs hover:text-gray-400">
                 FAQ
               </a>
             </li>
@@ -143,7 +162,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
-        <h1 className="text-gray-800 font-semibold  items-center text-light dark:text-dark">
+        <h1 className="text-gray-800 text-xs font-semibold  items-center text-light dark:text-dark">
           &copy; {new Date().getFullYear()} Ozzy'sG Blog. All rights reserved
         </h1>
       </div>

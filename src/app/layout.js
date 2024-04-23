@@ -1,5 +1,6 @@
 import './globals.css';
 import { cx } from '@/src/utils';
+import { Analytics } from '@vercel/analytics/react';
 import { Inter, Manrope } from 'next/font/google';
 import Header from '@/src/components/Header';
 import Footer from '../components/Footer';
@@ -74,7 +75,10 @@ export default function RootLayout({ children }) {
           {' '}
           {/* Gunakan padding pada div induk */}
           <Header />
-          <main>{children}</main>
+          <main>
+            {children}
+            <Analytics />
+          </main>
           <Footer />
         </div>
       </body>

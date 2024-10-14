@@ -7,33 +7,16 @@ import SearchBar from './Search';
 
 const Header = () => {
   const [click, setClick] = useState(false);
-  const [navbar, setNavbar] = useState(false);
 
   const toggle = () => {
     setClick(!click);
-    setNavbar(false);
-  };
-
-  const toggleNavbar = () => {
-    setNavbar(!navbar);
   };
 
   return (
-    <header className="w-full p-4 px-6 sm:px-10 flex items-center justify-between bg-light dark:bg-dark fixed top-0 left-0 right-0 z-50  ">
-      {/* Logo */}
-
-      <Logo />
-
-      {/* <SearchBar /> */}
-
-      <li className="flex items-center justify-center p-7 px-5 sm:px-10 fixed top-0 left-0 right-0 ">
-        <ThemeSwitcher />
-      </li>
-      {/* <ThemeSwitcher /> */}
-
-      {/* Hamburger Button */}
+    <header className="w-full p-4 px-6 sm:px-10 flex items-center justify-between bg-light dark:bg-dark fixed top-0 left-0 right-0 z-50">
+      {/* Hamburger Button for Mobile (aligned to left on mobile) */}
       <button
-        className="inline-block sm:hidden z-50"
+        className="inline-block sm:hidden z-50 absolute left-3"
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
@@ -71,9 +54,19 @@ const Header = () => {
         </div>
       </button>
 
+      {/* Logo (centered on mobile, remains left on larger screens) */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 sm:static sm:translate-x-0">
+        <Logo />
+      </div>
+
+      {/* Theme Switcher (aligned to right on mobile) */}
+      <div className="ml-auto sm:ml-0">
+        <ThemeSwitcher />
+      </div>
+
       {/* Navbar */}
       <nav
-        className={`absolute top-full left-0 right-0 bg-light dark:bg-dark  z-40 ${
+        className={`absolute top-full left-0 right-0 bg-light dark:bg-dark z-40 ${
           click ? 'block' : 'hidden' // Change navbar visibility based on click state
         } sm:relative sm:flex sm:items-center sm:justify-center`}
       >
@@ -82,24 +75,24 @@ const Header = () => {
             <SearchBar /> {/* Sesuaikan class */}
           </li>
 
-          <li className="pb-6 text-xl  py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
-            <Link href="/" onClick={toggleNavbar}>
+          <li className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+            <Link href="/" onClick={toggle}>
               Home
             </Link>
           </li>
 
-          <li className="pb-6 text-xl  py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
-            <Link href="/categories/all" onClick={toggleNavbar}>
+          <li className="pb-6 text-xl py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+            <Link href="/categories/all" onClick={toggle}>
               Categories
             </Link>
           </li>
           <li className="pb-6 text-xl py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
-            <Link href="/about" onClick={toggleNavbar}>
+            <Link href="/about" onClick={toggle}>
               About
             </Link>
           </li>
-          <li className="pb-6 text-xl  py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
-            <Link href="/about" onClick={toggleNavbar}>
+          <li className="pb-6 text-xl py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+            <Link href="/contact" onClick={toggle}>
               Contact
             </Link>
           </li>

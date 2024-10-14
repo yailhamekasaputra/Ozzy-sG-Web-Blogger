@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
     document.documentElement.classList.remove('dark')
   }`}
         </Script>
-        <div className="pt-16 px-4 sm:px-10 mt-16">
+        <div className="pt-9 px-4 sm:px-10 mt-9">
           {' '}
           {/* Gunakan padding pada div induk */}
           <Header />

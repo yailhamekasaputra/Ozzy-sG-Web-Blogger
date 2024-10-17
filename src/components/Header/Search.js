@@ -16,9 +16,9 @@ function SearchBar() {
       {/* Circular Button */}
       <button
         type="button"
-        className={`w-10 h-12 flex items-center justify-center rounded-full bg-transparent  text-dark dark:text-light transition-all duration-300 ${
+        className={`w-10 h-12 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light transition-all duration-300 ${
           isExpanded ? 'w-64' : ''
-        }`}
+        } focus:outline-none focus:ring-2 focus:ring-purple-600`}
         onClick={toggleSearch}
       >
         {/* Search Icon */}
@@ -27,7 +27,7 @@ function SearchBar() {
             viewBox="0 0 512 512"
             height="1em"
             xmlns="http://www.w3.org/2000/svg"
-            className={`fill-dark  light:filter dark:invert absolute right-0 mr-4 transform transition-transform duration-300 ${
+            className={`fill-dark light:filter dark:invert absolute right-0 mr-4 transform transition-transform duration-300 ${
               isExpanded ? 'translate-x-0' : 'translate-x-full'
             }`}
             style={{ right: iconPosition === 'center' ? '33%' : 'auto' }}
@@ -39,7 +39,7 @@ function SearchBar() {
         <input
           className={`absolute inset-center z-10 bg-transparent pl-10 pr-0 flex items-center justify-${iconPosition} w-full group-hover:px-3 text-dark dark:text-light font-sans rounded-full transition-all duration-300 ${
             isExpanded ? 'w-64' : 'w-10'
-          }`}
+          } focus:outline-none focus:ring-2 focus:ring-purple-600`}
           placeholder="Search"
           type="text"
         />

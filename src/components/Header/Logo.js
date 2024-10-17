@@ -5,7 +5,7 @@ import profileImg from '@/public/profile-img.png';
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center text-dark dark:text-light">
-      <div className="w-16 md:w-20 rounded-full overflow-hidden mr-2 md:mr-4">
+      <div className="w-16 md:w-20 rounded-full overflow-hidden md:mr-4">
         <Image
           src={profileImg}
           alt="CodeBucks logo"

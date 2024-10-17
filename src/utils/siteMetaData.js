@@ -1,14 +1,14 @@
 // please update required information
 const siteMetadata = {
-  title: 'Next.js Blog With Tailwind CSS and Contentlayer',
+  title: "Ozzy'sG Web Blogger",
   author: 'yailhameka',
   headerTitle: 'Next.js Blog',
-  description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
+  description: 'Welcome to my blog!',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://create-blog-with-nextjs.vercel.app', // your website URL
-  siteLogo: '/logo.png',
-  socialBanner: '/social-banner.png', // add social banner in the public folder
+  siteUrl: 'https://ozzysg-web-blogger.vercel.app', // your website URL
+  siteLogo: '@/public/profile-img.png',
+  socialBanner: '@/public/profile-img.png', // add social banner in the public folder
   email: 'yailhameka11@gmail.com',
   github: 'https://github.com/yailhamekasaputra',
   twitter: 'https://twitter.com/',

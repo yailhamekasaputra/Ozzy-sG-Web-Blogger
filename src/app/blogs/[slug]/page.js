@@ -103,7 +103,7 @@ export default function BlogPage({ params }) {
               link={`/categories/${slug(blog.tags[0])}`}
               className="px-6 text-sm py-2"
             /> */}
-            <h1 className="inline-block mt-6 font-semibold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
+            <h1 className="inline-block mt-6 font-bold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
               {blog.title}
             </h1>
           </div>

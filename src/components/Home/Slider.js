@@ -308,7 +308,8 @@ const Slider = ({ blogs }) => {
                     alt={blog.title}
                     fill
                     placeholder="blur"
-                    blurDataURL={blog.image.blurhashDataUrl} // Pastikan ini ada
+                    blurDataURL={blog.image.blurhashDataUrl}
+                    loading="eager" // Menambahkan ini
                     className="object-cover"
                   />
                 </div>

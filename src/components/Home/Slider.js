@@ -83,7 +83,7 @@ const Slider = ({ blogs }) => {
   }, []);
 
   return (
-    <div className="overflow-hidden relative w-full my-8">
+    <div className="overflow-hidden relative w-full mt-1 mb-8">
       <div
         ref={sliderRef}
         className="flex transition-transform duration-700 ease-in-out" // Perubahan durasi transisi

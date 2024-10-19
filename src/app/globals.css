@@ -6,6 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 h1 > a > .icon.icon-link:before,
 h2 > a > .icon.icon-link:before,
 h3 > a > .icon.icon-link:before {

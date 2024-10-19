@@ -1,30 +1,18 @@
 'use client'; // Menandakan bahwa ini adalah Client Component
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Marquee from 'react-fast-marquee'; // Import Marquee
 
 const Slider = ({ blogs }) => {
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const slider = sliderRef.current;
-      if (slider) {
-        const firstChild = slider.firstElementChild;
-        slider.appendChild(firstChild);
-      }
-    }, 3000); // Mengatur interval pergeseran setiap 3 detik
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <div className="overflow-hidden relative w-full mt-1 mb-8">
-      <div
-        ref={sliderRef}
-        className="flex transition-transform duration-700 ease-in-out" // Perubahan durasi transisi
-        style={{ width: `${blogs.length * 100}%` }} // Mengatur lebar slider sesuai jumlah blog
+      {/* Menggunakan Marquee untuk membuat efek running text */}
+      <Marquee
+        speed={50} // Kecepatan marquee, Anda bisa sesuaikan
+        gradient={false} // Menghilangkan gradasi di tepi slider
+        pauseOnHover={true} // Pause saat hover
       >
         {blogs.map((blog, index) => (
           <Link
@@ -54,7 +42,7 @@ const Slider = ({ blogs }) => {
             </div>
           </Link>
         ))}
-      </div>
+      </Marquee>
     </div>
   );
 };

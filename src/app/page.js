@@ -3,6 +3,7 @@ import HomeCoverSection from '../components/Home/HomeCoverSection';
 import FeaturedPosts from '../components/Home/FeaturedPosts';
 import RecentPosts from '../components/Home/RecentPosts';
 import Slider from '../components/Home/Slider';
+import CardSlider from '../components/Home/CardSlider';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Slider blogs={allBlogs} />
       <HomeCoverSection blogs={allBlogs} />
       <FeaturedPosts blogs={allBlogs} />
+      <CardSlider blogs={allBlogs} />
       <RecentPosts blogs={allBlogs} />
     </main>
   );

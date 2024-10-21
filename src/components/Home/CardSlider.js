@@ -293,7 +293,7 @@ const CardSlider = ({ blogs }) => {
       {
         breakpoint: 480, // Smaller mobile screens
         settings: {
-          slidesToShow: 1, // Show 1 card on smaller mobile
+          slidesToShow: 2, // Show 1 card on smaller mobile
           slidesToScroll: 1,
         },
       },
@@ -311,17 +311,17 @@ const CardSlider = ({ blogs }) => {
             <Link href={blog.url} key={index} className="flex-shrink-0">
               <article className="border border-gray-900 dark:border-white rounded-lg shadow-lg transition hover:shadow-sm mx-2">
                 <div className="rounded-lg p-4 text-center bg-light dark:bg-dark">
-                  <h3 className="mt-2 text-lg font-semibold text-gray-900 dark:text-white line-clamp-3">
+                  <h3 className="mt-2 md:text-lg text-sm font-semibold text-gray-900 dark:text-white line-clamp-3">
                     {blog.title}
                   </h3>
                   <div className="mt-2 flex items-center justify-center">
                     <FiCalendar className="mr-1 text-gray-900 dark:text-white" />
-                    <span className="text-sm text-gray-900 dark:text-white">
+                    <span className="text-gray-900 dark:text-white md:text-lg text-xs">
                       {format(parseISO(blog.publishedAt), 'LLLL d, yyyy')}
                     </span>
                   </div>
                   <div className="mt-2">
-                    <span className="text-sm text-gray-600 dark:text-gray-400 dark:text-white">
+                    <span className="md:text-lg text-sm text-gray-600 dark:text-gray-400 dark:text-white">
                       #{blog.tags[0]}
                     </span>
                   </div>

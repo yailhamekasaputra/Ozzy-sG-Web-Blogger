@@ -4,6 +4,7 @@ import FeaturedPosts from '../components/Home/FeaturedPosts';
 import RecentPosts from '../components/Home/RecentPosts';
 import Slider from '../components/Home/Slider';
 import CardSlider from '../components/Home/CardSlider';
+import BlogList from '../components/Home/BlogList';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Slider blogs={allBlogs} />
       <HomeCoverSection blogs={allBlogs} />
       <FeaturedPosts blogs={allBlogs} />
+      <BlogList blogs={allBlogs} />
       <CardSlider blogs={allBlogs} />
       <RecentPosts blogs={allBlogs} />
     </main>

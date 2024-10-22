@@ -301,9 +301,9 @@ const CardSlider = ({ blogs }) => {
   };
 
   return (
-    <section className="w-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center">
-      <div className="relative w-full mt-1 mb-8">
-        <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-dark dark:text-light text-center mb-4">
+    <section className="w-full mt-8 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center">
+      <div className="relative w-full mt-0 mb-0">
+        <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-dark dark:text-light text-center mb-8">
           Popular Posts
         </h2>
         <Slider {...settings}>
@@ -312,7 +312,12 @@ const CardSlider = ({ blogs }) => {
               <article className="border border-gray-900 dark:border-white rounded-lg shadow-lg transition hover:shadow-sm mx-2">
                 <div className="rounded-lg p-4 text-center bg-light dark:bg-dark">
                   <h3 className="mt-2 md:text-lg text-sm font-semibold text-gray-900 dark:text-white line-clamp-3">
-                    {blog.title}
+                    <span
+                      className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] dark:from-accentDark/50 dark:to-accentDark/50
+        hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
+                    >
+                      {blog.title}
+                    </span>
                   </h3>
                   <div className="mt-2 flex items-center justify-center">
                     <FiCalendar className="mr-1 text-gray-900 dark:text-white" />

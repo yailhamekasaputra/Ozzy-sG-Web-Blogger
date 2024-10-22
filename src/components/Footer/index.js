@@ -10,10 +10,10 @@ import { FaTwitter } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="mt-10 rounded-2xl bg-dark dark:bg-light m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-      <h3 className="mt-12  font-bold  text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
+      <h3 className="mt-5  font-bold  text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
         Hello World!
       </h3>
-      <div className="bg-gray-50 h-auto md:h-1/2 w-full flex md:flex-row flex-col justify-center items-center p-8 md:p-20">
+      <div className="bg-gray-50 h-auto md:h-1/2 w-full flex md:flex-row flex-col justify-center items-center p-0 md:p-0">
         <div className="p-5 flex items-center">
           <div class="flex items-center p-3 w-72 h-28   rounded-md shadow-lg bg-light dark:bg-dark">
             <section class="flex justify-center items-center w-14 h-14 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">
@@ -27,7 +27,7 @@ function Footer() {
                 <h3 class="text-gray-600 font-semibold text-sm text-dark dark:text-light">
                   yailhameka
                 </h3>
-                <h3 class="bg-clip-text text-transparent bg-gradient-to-l from-[#005BC4] to-[#0707e6] text-lg font-bold">
+                <h3 class=" text-dark dark:text-light text-lg font-bold">
                   Web Developer
                 </h3>
               </div>
@@ -61,15 +61,16 @@ function Footer() {
       </div>
       <div className="container w-full mx-auto px-10 flex flex-wrap gap-4">
         <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-1">
-          <h3 className="text-xl font-bold mb-4">Welcome to my blog!</h3>
+          <h3 className="text-xl font-bold mb-2 md:text-left text-center ">
+            Welcome to my blog!
+          </h3>
           <p className="text-xs text-justify justify-between">
             Here, you will discover insightful perspectives on fascinating
-            topics such as movies, technology, music, art, and more. Let's enjoy
-            this colorful journey together!
+            topics such as movies, technology, music, art, and more. Enjoyed!
           </p>
         </div>
 
-        <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-1">
+        {/* <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-0">
           <h3 className="text-sm font-bold mb-4">Categorie</h3>
           <ul className="flex flex-wrap">
             <li className="w-1/2 mb-1">
@@ -114,7 +115,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="px-4 mb-4">
+        <div className="px-4 mb-0">
           <h3 className="text-sm font-bold mb-4">Menu</h3>
           <ul>
             <li className="mb-1">
@@ -135,7 +136,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="px-4 mb-8">
+        <div className="px-4 mb-0">
           <h3 className="text-sm font-bold mb-4">Terms Of Use</h3>
           <ul>
             <li className="mb-1">
@@ -159,7 +160,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
         <h1 className="text-gray-800 text-xs font-semibold  items-center text-light dark:text-dark">

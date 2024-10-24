@@ -165,7 +165,7 @@ const Header = () => {
       > */}
       <nav
         className={`absolute top-full left-0 right-0 bg-light dark:bg-dark z-40 ${
-          click ? 'block' : 'hidden' // Change navbar visibility based on click state
+          click ? 'block' : 'hidden' // Show/hide menu based on click state
         } sm:relative sm:flex sm:items-center sm:justify-center`}
       >
         <ul className="sm:flex bg-light dark:bg-dark">
@@ -173,22 +173,41 @@ const Header = () => {
             <SearchBar /> {/* Sesuaikan class */}
           </li>
 
-          <li className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+          <li
+            className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 border-accent dark:border-accentDark md:border-b-0 dark:text-white 
+      hover:bg-accent dark:hover:bg-accentDark 
+      md:hover:bg-transparent md:hover:text-accent md:dark:hover:bg-transparent md:dark:hover:text-accentDark"
+          >
             <Link href="/" onClick={toggle}>
               Home
             </Link>
           </li>
-          <li className="pb-6 text-xl py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+
+          <li
+            className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 border-accent dark:border-accentDark md:border-b-0 dark:text-white 
+      hover:bg-accent dark:hover:bg-accentDark 
+      md:hover:bg-transparent md:hover:text-accent md:dark:hover:bg-transparent md:dark:hover:text-accentDark"
+          >
             <Link href="/categories/all" onClick={toggle}>
               Categories
             </Link>
           </li>
-          <li className="pb-6 text-xl py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+
+          <li
+            className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 border-accent dark:border-accentDark md:border-b-0 dark:text-white 
+      hover:bg-accent dark:hover:bg-accentDark 
+      md:hover:bg-transparent md:hover:text-accent md:dark:hover:bg-transparent md:dark:hover:text-accentDark"
+          >
             <Link href="/about" onClick={toggle}>
               About
             </Link>
           </li>
-          <li className="pb-6 text-xl py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent dark:text-white">
+
+          <li
+            className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 border-accent dark:border-accentDark md:border-b-0 dark:text-white 
+      hover:bg-accent dark:hover:bg-accentDark 
+      md:hover:bg-transparent md:hover:text-accent md:dark:hover:bg-transparent md:dark:hover:text-accentDark"
+          >
             <Link href="/contact" onClick={toggle}>
               Contact
             </Link>

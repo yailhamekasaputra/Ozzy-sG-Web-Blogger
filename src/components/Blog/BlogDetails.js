@@ -49,7 +49,7 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
         <FiClock className="mr-1 text-sm" /> {/* Clock icon */}
         <span className="text-xs md:text-sm">{blog.readingTime.text}</span>
       </div>
-      <span className="m-1 text-sm md:text-sm">
+      <span className="m-1 text-xs md:text-sm">
         <Link href={`/categories/${slug(blog.tags[0])}`} passHref>
           #{blog.tags[0]}
         </Link>

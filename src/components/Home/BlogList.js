@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const BlogList = ({ blogs }) => {
   return (
-    <section className="w-full mt-4  px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center ">
+    <section className="w-full mt-4  px-5 sm:px-10 md:px-0 sxl:px-32 flex flex-col items-center justify-center ">
       <div className="  bg-neutral-50 dark:bg-neutral-800  mx-0 hover:shadow-lg transition-shadow dark:bg-gray-800 rounded-lg p-5 shadow-md ">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {blogs.slice(7, 11).map((blog, index) => (

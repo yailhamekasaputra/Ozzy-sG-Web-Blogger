@@ -321,7 +321,7 @@ const CardSlider = ({ blogs }) => {
                   </h3>
                   <div className="mt-2 flex items-center justify-center">
                     <FiCalendar className="mr-1 text-gray-900 dark:text-white text-xs" />
-                    <span className="text-gray-900 dark:text-white md:text-xs text-xs">
+                    <span className="text-gray-900 dark:text-white md:text-xs text-[10px]">
                       {format(parseISO(blog.publishedAt), 'LLLL d, yyyy')}
                     </span>
                   </div>

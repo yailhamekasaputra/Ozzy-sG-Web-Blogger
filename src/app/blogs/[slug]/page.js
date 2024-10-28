@@ -346,8 +346,8 @@ export default function BlogPage({ params }) {
                     <li key={relatedBlog._id}>
                       <a
                         href={`/blogs/${relatedBlog._raw.flattenedPath}`}
-                        className="uppercase text-sm font-bold bg-gradient-to-r from-accent to-accent bg-[length:0px_2px] dark:from-accentDark/50 dark:to-accentDark/50
-        hover:bg-[length:100%_2px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
+                        className="uppercase text-sm font-bold bg-gradient-to-r from-accent to-accent bg-[length:0px_3px] dark:from-accentDark/50 dark:to-accentDark/50
+        hover:bg-[length:100%_3px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
                       >
                         {relatedBlog.title}
                       </a>

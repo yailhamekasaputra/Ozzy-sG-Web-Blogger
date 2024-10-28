@@ -122,7 +122,7 @@ function SearchBar() {
 
       {/* Render Hasil Pencarian */}
       {isExpanded && searchResults.length > 0 && (
-        <div className="absolute z-20 bg-white dark:bg-gray-800 shadow-lg mt-2 rounded-lg w-full">
+        <div className="absolute z-20 bg-white dark:bg-gray-800 shadow-lg mt-2 rounded-lg w-full max-h-60 overflow-y-auto scrollbar">
           {searchResults.map((result) => (
             <div
               key={result._raw.flattenedPath}

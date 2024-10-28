@@ -222,7 +222,12 @@ function SearchBar() {
               className="p-2 hover:bg-gray-200 text-dark dark:text-light dark:hover:bg-gray-700 cursor-pointer"
               onClick={() => handleResultClick(result._raw.flattenedPath)} // Pastikan menggunakan flattenedPath atau slug yang benar
             >
-              {result.title}
+              <span
+                className="bg-gradient-to-r from-accent to-accent bg-[length:0px_4px] dark:from-accentDark/50 dark:to-accentDark/50
+        hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
+              >
+                {result.title}
+              </span>
             </div>
           ))}
         </div>

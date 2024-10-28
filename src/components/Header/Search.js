@@ -122,11 +122,11 @@ function SearchBar() {
 
       {/* Render Hasil Pencarian */}
       {isExpanded && searchResults.length > 0 && (
-        <div className="absolute z-20 bg-white dark:bg-gray-800 shadow-lg mt-2 rounded-lg w-full max-h-60 overflow-y-auto scrollbar">
+        <div className="absolute z-20 bg-light dark:bg-dark dark:bg-gray-800 shadow-lg mt-2 rounded-lg w-full max-h-60 overflow-y-auto scrollbar">
           {searchResults.map((result) => (
             <div
               key={result._raw.flattenedPath}
-              className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer"
+              className="p-2 hover:bg-gray-200 text-dark dark:text-light dark:hover:bg-gray-700 cursor-pointer"
               onClick={() => handleResultClick(result.slug)} // Mengarahkan ke artikel yang dipilih
             >
               {result.title}

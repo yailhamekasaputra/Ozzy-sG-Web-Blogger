@@ -18,7 +18,7 @@ function SearchBar() {
         type="button"
         className={`w-10 h-12 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light transition-all duration-300 ${
           isExpanded ? 'w-64' : ''
-        } focus:outline-none focus:ring-2 focus:ring-accentDark`}
+        } focus:outline-none focus:ring-2 focus:ring-accent dark:focus:ring-accentDark`}
         onClick={toggleSearch}
       >
         {/* Search Icon */}
@@ -39,7 +39,7 @@ function SearchBar() {
         <input
           className={`absolute inset-center z-10 bg-transparent pl-10 pr-0 flex items-center justify-${iconPosition} w-full group-hover:px-3 text-dark dark:text-light font-sans rounded-full transition-all duration-300 ${
             isExpanded ? 'w-64' : 'w-10'
-          } focus:outline-none focus:ring-2 focus:ring-accentDark`}
+          } focus:outline-none focus:ring-2 focus:ring-accent dark:focus:ring-accentDark`}
           placeholder="Search"
           type="text"
         />

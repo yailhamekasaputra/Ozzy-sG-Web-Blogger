@@ -312,7 +312,7 @@ export default function BlogPage({ params }) {
                       href={`#${heading.slug}`}
                       data-level={heading.level}
                       className="data-[level=two]:pl-0  data-[level=two]:pt-2
-                                 data-[level=two]:border-t border-solid border-dark/40
+                                 data-[level=two]:border-t border-solid text-dark dark:text-light
                                  data-[level=three]:pl-4
                                  sm:data-[level=three]:pl-6
                                  flex items-center justify-start
@@ -337,14 +337,17 @@ export default function BlogPage({ params }) {
 
             {/* "Baca Juga" Section in the Middle of the Article */}
             {relatedBlogs.length > 0 && (
-              <section className="mt-8 mb-8">
-                <h2 className="text-xl font-semibold mb-4">Baca Juga</h2>
-                <ul className="space-y-4">
+              <section className="mt-8 ">
+                <h2 className="text-xl font-semibold mb-4 text-accent dark:text-accentDark">
+                  BACA JUGA:
+                </h2>
+                <ul className="space-y-4 dark:text-white ">
                   {relatedBlogs.map((relatedBlog) => (
                     <li key={relatedBlog._id}>
                       <a
                         href={`/blogs/${relatedBlog._raw.flattenedPath}`}
-                        className="text-primary hover:underline"
+                        className="uppercase text-sm font-bold bg-gradient-to-r from-accent to-accent bg-[length:0px_2px] dark:from-accentDark/50 dark:to-accentDark/50
+        hover:bg-[length:100%_2px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
                       >
                         {relatedBlog.title}
                       </a>

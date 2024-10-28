@@ -338,7 +338,7 @@ export default function BlogPage({ params }) {
             {/* "Baca Juga" Section in the Middle of the Article */}
             {relatedBlogs.length > 0 && (
               <section className="mt-8 ">
-                <h2 className="text-xl font-semibold mb-4 text-accent dark:text-accentDark">
+                <h2 className="text-lg font-bold mb-4 text-accent dark:text-accentDark">
                   BACA JUGA:
                 </h2>
                 <ul className="space-y-4 dark:text-white ">

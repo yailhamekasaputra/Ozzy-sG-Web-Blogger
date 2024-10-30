@@ -167,6 +167,7 @@
 // }
 
 import BlogDetails from '@/src/components/Blog/BlogDetails';
+import DisqusComments from '@/src/components/Blog/DisqusComments';
 import RenderMdx from '@/src/components/Blog/RenderMdx';
 import Tag from '@/src/components/Elements/Tag';
 import siteMetadata from '@/src/utils/siteMetaData';
@@ -356,6 +357,9 @@ export default function BlogPage({ params }) {
                 </ul>
               </section>
             )}
+            <div className="mt-8 bg-dark p-4 rounded-lg shadow-md">
+              <DisqusComments slug={blog.slug} title={blog.title} />
+            </div>
           </div>
         </div>
       </article>

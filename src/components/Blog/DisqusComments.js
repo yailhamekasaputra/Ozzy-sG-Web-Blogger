@@ -15,7 +15,7 @@ function DisqusComments({ slug, title }) {
     } else {
       const d = document;
       const s = d.createElement('script');
-      s.src = 'https://https-ozzysg-web-blogger-vercel-app.disqus.com/embed.js'; // Ganti dengan shortname Disqus Anda
+      s.src = 'https:ozzysg-web-blogger-vercel-app.disqus.com/embed.js'; // Ganti dengan shortname Disqus Anda
       s.setAttribute('data-timestamp', +new Date());
       d.body.appendChild(s);
     }

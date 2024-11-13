@@ -296,8 +296,8 @@ export default function BlogPage({ params }) {
           />
           {/* Sumber gambar */}
           {blog.imageSource && (
-            <div className="mt-2 text-sm text-gray-600 dark:text-gray-400 text-center">
-              <span className="absolute bottom-1 right-1 rounded-lg bg-black/40 px-2 py-0.5 text-xs text-gray-200">
+            <div className="text-sm text-gray-600 dark:text-gray-400 text-center">
+              <span className="absolute bottom-1 right-1 rounded-sm bg-black/40 px-2 py-0.5 text-xs text-gray-200">
                 <a
                   className="text-[10px] sm:text-xs text-white"
                   href={blog.imageSource} // Menggunakan URL yang ada pada blog.imageSource

@@ -28,6 +28,8 @@ const Blog = defineDocumentType(() => ({
       required: true,
     },
     image: { type: 'image' },
+    imageSource: { type: 'string', required: false },
+    imageSourceText: { type: 'string', required: false },
     isPublished: {
       type: 'boolean',
       default: true,

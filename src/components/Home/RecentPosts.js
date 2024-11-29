@@ -25,7 +25,7 @@ const RecentPosts = ({ blogs }) => {
       </span>
     </span>
     {/* Teks Tombol */}
-    <span className="button-text absolute inset-0 ml-2.5 py-[0.2rem] sm:py-[0.4rem] text-accent dark:text-accentDark font-bold leading-[1.4] text-center transition-all duration-[450ms] ease-[cubic-bezier(0.65,0,0.076,1)] group-hover:text-dark dark:group-hover:text-light md:ml-[1rem] md:py-[0.65rem]">
+    <span className="button-text absolute inset-0 ml-2.5 py-[0.24rem] sm:py-[0.4rem] text-accent dark:text-accentDark font-bold leading-[1.4] text-center transition-all duration-[450ms] ease-[cubic-bezier(0.65,0,0.076,1)] group-hover:text-dark dark:group-hover:text-light md:ml-[1rem] md:py-[0.65rem]">
       View All
     </span>
   </Link>

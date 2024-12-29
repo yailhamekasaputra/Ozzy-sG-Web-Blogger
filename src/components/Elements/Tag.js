@@ -13,7 +13,7 @@ const Tag = ({ link = '#', name, ...props }) => {
     >
       <span className="text-sm">{name}</span>
       <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-        <div className="relative h-full w-10 bg-white/20"></div>
+        <div className="relative h-full w-8 bg-accent/25 dark:bg-accentDark/25"></div>
       </div>
     </Link>
   );
